@@ -1,0 +1,19 @@
+﻿body 
+{
+}
+
+.beginner
+{
+    background-color: darkgreen;
+}
+
+.intermediate
+{
+    background-color: lightgoldenrodyellow;
+}
+
+.expert
+{
+    background-color: crimson;
+}
+

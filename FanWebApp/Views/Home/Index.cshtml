@@ -1,31 +1,33 @@
 ﻿@{
-    ViewBag.Title = "Home Page";
+    ViewBag.Title = "Michael's Favorite Food";
 }
-
-<div class="jumbotron">
-    <h1>ASP.NET</h1>
-    <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
-    <p><a href="http://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
+<div class="container" style="text-align:center">
+    <p style="text-align: center">
+    </p>
 </div>
 
-<div class="row">
-    <div class="col-md-4">
-        <h2>Getting started</h2>
-        <p>
-            ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
-            enables a clean separation of concerns and gives you full control over markup
-            for enjoyable, agile development.
-        </p>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-        <h2>Get more libraries</h2>
-        <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-        <h2>Web Hosting</h2>
-        <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <h4>Coffee</h4>
+            <img src="https://www.drum.fit/wp-content/uploads/2016/03/cup-of-coffee.jpg" style="height: 300px; width: 300px" />
+            <p>
+                Coffee includes many types of caffeinated drinks, from espresso to iced coffee to lattes.
+            </p>
+            <p><a class="btn btn-default" @Html.ActionLink("More", "Coffee", "Food")</a></p>
+        </div>
+        <div class="col-md-4">
+            <h4>Breakfast Food</h4>
+            <img src="http://sites.psu.edu/siowfa15/wp-content/uploads/sites/29639/2015/09/Pancake-Breakfast-1.jpg" style="height: 300px; width: 300px" />
+            <p>Breakfast foods are versatile, easy to prepare, and perfect for improvisation.</p>
+            <p><a class="btn btn-default" @Html.ActionLink("More", "Breakfast", "Food")</a></p>
+        </div>
+        <div class="col-md-4">
+            <h4>Sushi</h4>
+            <img src="https://img.grouponcdn.com/iam/hYKNivXdxd6pjtkdPtdy/bq-2048x1229/v1/c700x420.jpg" style="height:300px; width: 300px" />
+            <p>With its many varieties and styles, sushi is a cuisine that can fit almost anyone's palate.</p>
+            <p><a class="btn btn-default" @Html.ActionLink("More", "Sushi", "Food") </a></p>
+        </div>
     </div>
 </div>
